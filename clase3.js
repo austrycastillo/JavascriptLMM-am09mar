@@ -130,4 +130,25 @@ mostrar el promedio de esos números
 /*
 crear un sistema solicitar usuario y clave
 3 funciones
+var nombre, contrasena;
+
+function usuario(){
+    var usuario = window.prompt("Por favor, ingrese el usuario");
+    return usuario;
+}
+function clave(){
+    var pass = parseInt(window.prompt("Por favor, ingrese la clave"));
+    return pass;
+}
+function validar(nombre, contrasena){
+    if((nombre == "Luciano") && (contrasena == 1234)){
+        window.location.href = 'ingreso.html';
+    }else{
+        alert("Usuario o clave incorrecta");
+    }
+}
+nombre = usuario();
+contrasena = clave();
+validar(nombre, contrasena);
+
 */
